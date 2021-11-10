@@ -156,8 +156,8 @@ if __name__ == '__main__':
     epochs = 35
     ng_num = 5
 
-    node_path = '../data/input/node.json'
-    link_path = '../data/input/link.json'
+    node_path = 'data/input/node.json'
+    link_path = 'data/input/link.json'
 
     # 1. 初始化horovod
     hvd.init()
