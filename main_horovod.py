@@ -14,7 +14,6 @@ import torch.nn.functional as F
 import torch.optim as optim
 import torch.utils.data as Data
 import numpy as np
-import matplotlib.pyplot as plt
 import networkx as nx
 import json
 import time
@@ -23,12 +22,6 @@ from tqdm import tqdm
 
 def not_empty(s):
     return s and s.strip()
-
-
-# loss曲线绘制
-def loss_draw(epochs, loss_list):
-    plt.plot([i + 1 for i in range(epochs)], loss_list)
-    plt.show()
 
 
 class NetworkDeal():
